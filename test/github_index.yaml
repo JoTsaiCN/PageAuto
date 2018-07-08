@@ -1,0 +1,43 @@
+index:
+  pattern: 'body'
+  ele_tree:
+    header:
+      pattern: 'body > div.position-relative.js-header-wrapper > header > div'
+      ele_tree:
+        logo:
+          pattern: 'div.d-flex.flex-justify-between.flex-items-center > a'
+        features:
+          pattern: 'div.HeaderMenu.HeaderMenu--bright.d-lg-flex.flex-justify-between.flex-auto > nav > ul > li.ml-lg-2 > a'
+        business:
+          pattern: 'div.HeaderMenu.HeaderMenu--bright.d-lg-flex.flex-justify-between.flex-auto > nav > ul > li:nth-child(2) > a'
+        explore:
+          pattern: 'div.HeaderMenu.HeaderMenu--bright.d-lg-flex.flex-justify-between.flex-auto > nav > ul > li:nth-child(3) > a'
+        marketplace:
+          pattern: 'div.HeaderMenu.HeaderMenu--bright.d-lg-flex.flex-justify-between.flex-auto > nav > ul > li:nth-child(4) > a'
+        pricing:
+          pattern: 'div.HeaderMenu.HeaderMenu--bright.d-lg-flex.flex-justify-between.flex-auto > nav > ul > li:nth-child(5) > a'
+        search:
+          pattern: 'div.HeaderMenu.HeaderMenu--bright.d-lg-flex.flex-justify-between.flex-auto > div'
+          ele_tree:
+            input:
+              pattern: 'div > div > div > form > label > input.form-control.header-search-input.jump-to-field.js-jump-to-field.js-site-search-focus'
+            popup:
+              pattern: '#jump-to-results'
+            sign_in:
+              pattern: 'span > div > a:nth-child(1)'
+            sign_up:
+              pattern: 'span > div > a:nth-child(3)'
+    main:
+      pattern: 'div.application-main'
+      ele_tree:
+        sign_up_form:
+          pattern: 'div.py-6.py-sm-8.py-lg-10.py-xl-12.jumbotron-codelines > div > div > div.mx-auto.col-sm-8.col-md-5.hide-sm > div > form'
+          ele_tree:
+            username:
+              pattern: '#user\5b login\5d'
+            email:
+              pattern: '#user\5b email\5d'
+            password:
+              pattern: '#user\5b password\5d'
+            sign_up_button:
+              pattern: 'button'
